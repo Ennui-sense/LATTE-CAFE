@@ -9,7 +9,7 @@
 	color: var(--color-brown);
 	border: var(--border);
 	height: var(--button-height);
-	padding-inline: rem(225);
+	width: rem(530);
 
   @include hover() {
     background-color: var(--color-brown);
@@ -20,5 +20,6 @@
 	&.active {
 		background-color: var(--color-brown);
 		color: var(--color-light);
+		pointer-events: none;
 	}
 }

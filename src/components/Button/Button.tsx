@@ -2,12 +2,13 @@ import "./Button.scss";
 
 interface IButton {
   children: string;
-	isActive?: boolean
+	isActive?: boolean;
+	onClick?: () => void;
 }
 
-const Button = ({ children, isActive }: IButton) => {
+const Button = ({ children, isActive, onClick }: IButton) => {
   return (
-    <button type="button" className={isActive ? "button active" : "button"}>
+    <button type="button" className={isActive ? "button active" : "button"} onClick={onClick}>
       {children}
     </button>
   );

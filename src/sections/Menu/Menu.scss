@@ -1,0 +1,33 @@
+@use "/scss/helpers/" as *;
+
+.menu {
+  background-color: var(--color-biege);
+  padding-block: rem(120);
+  color: var(--color-brown);
+
+  &__inner {
+    display: flex;
+		justify-content: space-between;
+    column-gap: rem(20);
+  }
+
+  &__body {
+    max-width: rem(560);
+  }
+
+	&__title {
+		margin-bottom: rem(15);
+	}
+
+  &__description {
+    font-size: rem(32);
+    line-height: 1.4;
+		margin-bottom: rem(60);
+  }
+
+	&__types {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(12);
+	}
+}

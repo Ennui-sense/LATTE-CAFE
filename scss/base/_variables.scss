@@ -22,7 +22,7 @@
 	--button-height: #{rem(58)};
 	--header-height: #{rem(120)};
 
-	--border: #{rem(2)} solid currentColor;
+	--border: #{rem(2)} solid var(--color-brown);
 
 	--transition-duration: .25s;
 }

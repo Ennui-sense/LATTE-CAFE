@@ -6,7 +6,7 @@ import Email from "/img/icons/email.svg?react";
 import Facebook from "/img/icons/facebook.svg?react";
 import Instagram from "/img/icons/instagram.svg?react";
 
-import menu from "../../data/data";
+import { headerMenu } from "../../data/data";
 
 const Header = () => {
   return (
@@ -14,8 +14,8 @@ const Header = () => {
       <div className="header__inner container">
         <nav className="header__menu">
           <ul className="header__menu-list">
-            {menu.map((item) => (
-              <li className="header__menu-item">
+            {headerMenu.map((item) => (
+              <li className="header__menu-item" key={item}>
                 <a href="#" className="header__menu-link">
                   {item}
                 </a>
