@@ -1,0 +1,23 @@
+@use "/scss/helpers/" as *;
+
+.about {
+  padding-block: rem(220);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(3);
+    align-items: center;
+  }
+
+  &__description {
+    max-width: rem(870);
+    font-size: rem(32);
+    line-height: 1.4;
+    text-align: center;
+
+		& span {
+			font-style: italic;
+		}
+  }
+}

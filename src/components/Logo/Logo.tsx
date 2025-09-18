@@ -3,7 +3,7 @@ import LogoImage from "/img/logo.svg";
 
 const Logo = () => {
   return (
-    <a href="#" className="logo">
+    <a href="#" className="header__logo logo">
       <img
         src={LogoImage}
         alt="Logotype our company"

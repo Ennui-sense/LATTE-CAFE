@@ -1,0 +1,41 @@
+@use "/scss/helpers/" as *;
+
+.header {
+  background-color: var(--color-red);
+  padding-block: rem(22);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-block: rem(22);
+  }
+
+  &__menu {
+    &-list {
+      display: flex;
+      column-gap: rem(20);
+    }
+
+    &-item {
+      display: flex;
+      height: 100%;
+    }
+
+    &-link {
+      font-size: rem(15);
+      line-height: 1.6;
+      color: var(--color-red-light);
+    }
+  }
+
+  &__logo {
+    margin-inline: auto;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    column-gap: rem(16);
+		margin-left: auto;
+  }
+}

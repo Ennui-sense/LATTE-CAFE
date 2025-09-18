@@ -1,20 +1,44 @@
 import "./Header.scss";
-import Button from "../../components/Button/Button";
 import Logo from "../../components/Logo/Logo";
 import IconLink from "../../components/IconLink/IconLink";
 
 import Email from "/img/icons/email.svg?react";
+import Facebook from "/img/icons/facebook.svg?react";
+import Instagram from "/img/icons/instagram.svg?react";
+
+import menu from "../../data/data";
 
 const Header = () => {
   return (
-    <div>
-      <Button>Drinks Menu</Button>
-			<Logo></Logo>
-			<IconLink href="#">
-				<Email></Email>
-			</IconLink>
+    <header className="header">
+      <div className="header__inner container">
+        <nav className="header__menu">
+          <ul className="header__menu-list">
+            {menu.map((item) => (
+              <li className="header__menu-item">
+                <a href="#" className="header__menu-link">
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
-    </div>
+        <Logo></Logo>
+
+        <div className="header__contacts">
+          <IconLink href="#">
+            <Email></Email>
+          </IconLink>
+          <IconLink href="#">
+            <Facebook></Facebook>
+          </IconLink>
+          <IconLink href="#">
+            <Instagram></Instagram>
+          </IconLink>
+        </div>
+      </div>
+    </header>
   );
 };
 
