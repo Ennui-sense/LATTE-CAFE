@@ -1,0 +1,14 @@
+@use "/scss/helpers/" as *;
+
+.info-block {
+  &__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(35);
+
+    &-text {
+      font-size: rem(25);
+      line-height: 1.46;
+    }
+  }
+}

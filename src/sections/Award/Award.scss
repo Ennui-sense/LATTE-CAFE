@@ -1,0 +1,23 @@
+@use "/scss/helpers/" as *;
+
+.award {
+  padding-block: rem(120);
+  background-color: var(--color-red);
+  color: var(--color-red-light);
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: rem(20);
+  }
+
+  &__title {
+    font-size: rem(47);
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+  }
+
+  &__description {
+    max-width: rem(595);
+  }
+}

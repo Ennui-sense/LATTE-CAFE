@@ -1,0 +1,28 @@
+@use "/scss/helpers/" as *;
+
+.interior {
+  padding-block: rem(120);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "first second"
+      "third second";
+		gap: rem(40);
+  }
+
+  &__image {
+    &--1 {
+      grid-area: first;
+    }
+
+    &--2 {
+      grid-area: second;
+    }
+
+    &--3 {
+      grid-area: third;
+    }
+  }
+}

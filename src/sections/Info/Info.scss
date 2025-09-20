@@ -1,0 +1,19 @@
+@use "/scss/helpers/" as *;
+
+.info {
+	padding-block: rem(120);
+	background-color: var(--color-yellow);
+	color: var(--color-light);
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		row-gap: rem(15);
+		text-align: center;
+	}
+}
