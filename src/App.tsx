@@ -1,10 +1,13 @@
 import Header from "./sections/Header/Header";
+
 import Hero from "./sections/Hero/Hero";
 import About from "./sections/About/About";
 import Menu from "./sections/Menu/Menu";
 import Info from "./sections/Info/Info";
 import Interior from "./sections/Interior/Interior";
 import Award from "./sections/Award/Award";
+
+import Footer from "./sections/Footer/Footer";
 
 function App() {
   return (
@@ -19,6 +22,8 @@ function App() {
 				<Interior></Interior>
 				<Award></Award>
       </main>
+
+			<Footer></Footer>
     </>
   );
 }

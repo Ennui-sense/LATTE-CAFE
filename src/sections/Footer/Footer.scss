@@ -1,0 +1,39 @@
+@use "/scss/helpers/" as *;
+
+.footer {
+  display: flex;
+  padding: rem(56) rem(40);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(20);
+  }
+
+  &__menu {
+    max-width: rem(578);
+
+    &-list {
+      display: flex;
+      gap: rem(7) rem(32);
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      font-size: rem(15);
+      line-height: 1.49;
+    }
+  }
+
+  &__info {
+    display: flex;
+    column-gap: rem(16);
+		margin-inline: auto;
+  }
+
+  &__text {
+    font-size: rem(13);
+    line-height: 1.5;
+    color: var(--color-gray);
+  }
+}
