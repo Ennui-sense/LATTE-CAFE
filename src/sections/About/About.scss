@@ -1,7 +1,15 @@
-@use "/scss/helpers/" as *;
+@use "@/style/helpers/" as *;
 
 .about {
   padding-block: rem(220);
+
+	@include tablet {
+		padding-block: rem(180);
+	}
+
+	@include mobile {
+		padding-block: rem(120);
+	}
 
   &__inner {
     display: flex;
@@ -11,8 +19,9 @@
   }
 
   &__description {
+		@include fluid-text(32, 24);
+
     max-width: rem(870);
-    font-size: rem(32);
     line-height: 1.4;
     text-align: center;
 

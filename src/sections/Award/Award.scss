@@ -1,4 +1,4 @@
-@use "/scss/helpers/" as *;
+@use "@/style/helpers/" as *;
 
 .award {
   padding-block: rem(120);
@@ -9,10 +9,18 @@
     display: flex;
     justify-content: space-between;
     column-gap: rem(20);
+
+		@include tablet {
+			flex-direction: column;
+			row-gap: rem(20);
+			align-items: center;
+			text-align: center;
+		}
   }
 
   &__title {
-    font-size: rem(47);
+		@include fluid-text(47, 36);
+
     line-height: 1.33;
     letter-spacing: 0.02em;
   }

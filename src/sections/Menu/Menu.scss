@@ -1,18 +1,31 @@
-@use "/scss/helpers/" as *;
+@use "@/style/helpers/" as *;
 
 .menu {
   background-color: var(--color-biege);
   padding-block: rem(120);
   color: var(--color-brown);
 
+	@include mobile {
+		padding-block: rem(80);
+	}
+
   &__inner {
     display: flex;
 		justify-content: space-between;
-    column-gap: rem(20);
+    column-gap: rem(25);
+
+		@include tablet {
+			flex-direction: column;
+			row-gap: rem(25);
+		}
   }
 
   &__body {
     max-width: rem(560);
+
+		@include tablet {
+			max-width: 100%;
+		}
   }
 
 	&__title {
@@ -23,11 +36,39 @@
     font-size: rem(32);
     line-height: 1.4;
 		margin-bottom: rem(60);
+
+		@include tablet {
+			max-width: rem(560);
+			margin-bottom: rem(40);
+		}
+
+		@include mobile {
+			font-size: rem(24);
+			max-width: 100%;
+		}
   }
 
 	&__types {
 		display: flex;
 		flex-direction: column;
 		row-gap: rem(12);
+
+		@include tablet {
+			flex-direction: row;
+			justify-content: space-between;
+			column-gap: rem(30);
+		}
+
+		@include mobile {
+			column-gap: rem(20);
+		}
+	}
+
+	&__image {
+		max-width: rem(664);
+
+		@include tablet {
+			max-width: 100%;
+		}
 	}
 }

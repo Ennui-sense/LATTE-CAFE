@@ -1,4 +1,4 @@
-@use "/scss/helpers" as *;
+@use "@/style/helpers/" as *;
 
 .logo {
 	@include hover(false) {
@@ -7,5 +7,11 @@
 
 	&:active {
 		opacity: 0.3;
+	}
+
+	&__image {
+		@include mobile {
+			// margin-inline: auto;
+		}
 	}
 }

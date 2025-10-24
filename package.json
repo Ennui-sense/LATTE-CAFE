@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "dev:preview": "vite --host"
   },
   "dependencies": {
+    "@types/node": "^24.9.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "sass": "^1.92.1",

@@ -1,7 +1,11 @@
-@use "/scss/helpers/" as *;
+@use "@/style/helpers/" as *;
 
 .interior {
   padding-block: rem(120);
+
+	@include mobile {
+		padding-block: rem(80);
+	}
 
   &__inner {
     display: grid;
@@ -9,20 +13,37 @@
     grid-template-areas:
       "first second"
       "third second";
-		gap: rem(40);
+    gap: rem(40);
+
+		@include tablet {
+			gap: rem(20);
+		}
   }
 
   &__image {
+    object-fit: cover;
+    max-width: 100%;
+		height: rem(300);
+
+		@include tablet {
+			height: rem(250);
+		}
+
+		@include mobile {
+			height: rem(150);
+		}
+
     &--1 {
       grid-area: first;
     }
 
     &--2 {
       grid-area: second;
+			height: 100%;
     }
 
     &--3 {
-      grid-area: third;
+      grid-area: third; 
     }
   }
 }

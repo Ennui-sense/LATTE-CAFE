@@ -2,9 +2,6 @@ import "./Footer.scss";
 
 import { footerMenu } from "../../data/data";
 
-
-// import styles from "./Footer.module.scss";
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -13,7 +10,7 @@ const Footer = () => {
           <ul className="footer__menu-list">
             {footerMenu.map((item) => (
               <li className="footer__menu-item" key={item}>
-                {item}
+                <a href="#" className="footer__menu-link">{item}</a>
               </li>
             ))}
           </ul>

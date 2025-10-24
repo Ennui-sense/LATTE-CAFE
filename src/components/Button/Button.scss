@@ -1,4 +1,4 @@
-@use "/scss/helpers/" as *;
+@use "@/style/helpers/" as *;
 
 .button {
   @include button-reset;
@@ -9,7 +9,12 @@
 	color: var(--color-brown);
 	border: var(--border);
 	height: var(--button-height);
-	width: rem(530);
+	max-width: rem(530);
+	width: 100%;
+
+	@include mobile {
+		font-size: rem(14);
+	}
 
   @include hover() {
     background-color: var(--color-brown);

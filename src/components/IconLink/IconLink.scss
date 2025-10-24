@@ -1,8 +1,16 @@
-@use "/scss/helpers/" as *;
+@use "@/style/helpers/" as *;
 
 .icon-link {
   @include button-reset;
   @include flex-center(true);
 
 	color: var(--color-red-light);
+
+	@include hover(false) {
+		opacity: 0.6;
+	}
+	
+	&:active {
+		opacity: 0.3;
+	}
 }
